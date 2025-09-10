@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.atl.vitalstats.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "refmap": "VitalStats-refmap.json",
+  "client": [
+    "client.EntityRendererMixin",
+    "client.MinecraftClientMixin",
+    "client.ClientPlayerEntityMixin",
+    "client.ClientPlayNetworkHandlerMixin"
+  ],
+  "mixins": [
+    "common.EntityDamageMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

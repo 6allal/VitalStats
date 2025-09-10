@@ -1,0 +1,47 @@
+{
+  "yacl3.config.vitalstats:main_config.category.health_indicator": "Health Indicator",
+  "yacl3.config.vitalstats:main_config.category.health_indicator.desc": "Configure when and how health indicators are displayed",
+
+  "yacl3.config.vitalstats:main_config.category.health_indicator.group.health_indicator": "Health Indicator",
+  "yacl3.config.vitalstats:main_config.category.health_indicator.group.health_indicator.desc": "Configure health indicator display and entity filtering",
+
+  "yacl3.config.vitalstats:main_config.indicator_type": "Display Type",
+  "yacl3.config.vitalstats:main_config.indicator_type.desc": "Choose between hearts (like vanilla Minecraft) or numbers",
+
+  "yacl3.config.vitalstats:main_config.passive_mobs": "Passive Mobs",
+  "yacl3.config.vitalstats:main_config.passive_mobs.desc": "Show health indicators above passive mobs (animals, villagers, etc.)",
+
+  "yacl3.config.vitalstats:main_config.hostile_mobs": "Hostile Mobs",
+  "yacl3.config.vitalstats:main_config.hostile_mobs.desc": "Show health indicators above hostile mobs (zombies, skeletons, etc.)",
+
+  "yacl3.config.vitalstats:main_config.players": "Other Players",
+  "yacl3.config.vitalstats:main_config.players.desc": "Show health indicators above other players",
+
+  "yacl3.config.vitalstats:main_config.self": "Yourself",
+  "yacl3.config.vitalstats:main_config.self.desc": "Show your own health indicator in third person view",
+
+  "yacl3.config.vitalstats:main_config.blacklist": "Entity Blacklist",
+  "yacl3.config.vitalstats:main_config.blacklist.desc": "Entities that will never show health indicators (use entity IDs like 'minecraft:armor_stand')",
+
+  "yacl3.config.vitalstats:main_config.category.totem_counter": "Totem Counter",
+  "yacl3.config.vitalstats:main_config.category.totem_counter.desc": "Track totem of undying usage above players",
+
+  "yacl3.config.vitalstats:main_config.show_totem_counter": "Enable Totem Counter",
+  "yacl3.config.vitalstats:main_config.show_totem_counter.desc": "Show totem pop counts above players when they use totems",
+
+  "yacl3.config.vitalstats:main_config.show_for_self": "Show Your Totems",
+  "yacl3.config.vitalstats:main_config.show_for_self.desc": "Display your own totem counter above your head",
+
+  "yacl3.config.vitalstats:main_config.show_for_other_players": "Show Others' Totems",
+  "yacl3.config.vitalstats:main_config.show_for_other_players.desc": "Display totem counters above other players",
+
+  "category.vitalstats.keybindings": "VitalStats | Totem Counter",
+  "key.vitalstats.reset_totem_counters": "Reset All Totem Counters",
+  "key.vitalstats.renderingEnabled": "Toggle Health Indicators",
+  "key.vitalstats.armorRenderingEnabled": "Toggle Armor Indicators",
+  "key.vitalstats.overrideAllFilters": "Override All Filters",
+  "key.vitalstats.increaseHeartOffset": "Increase Display Offset",
+  "key.vitalstats.decreaseHeartOffset": "Decrease Display Offset",
+  "key.vitalstats.openModMenuConfig": "Open VitalStats Config",
+  "key.categories.vitalstats": "VitalStats | Health Indicator"
+}

@@ -1,0 +1,73 @@
+plugins {
+    id 'fabric-loom' version '1.6-SNAPSHOT'
+    id 'maven-publish'
+}
+
+group = project.maven_group
+version = project.mod_version
+
+base {
+    archivesName = project.archives_name
+}
+
+loom {
+    accessWidenerPath = file("src/main/resources/vitalstats.accesswidener")
+}
+
+repositories {
+    maven{
+        name 'Xander Maven'
+        url 'https://maven.isxander.dev/releases'
+    }
+    maven { url "https://maven.terraformersmc.com/releases/"}
+    maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
+}
+
+dependencies {
+    minecraft "net.minecraft:minecraft:$project.minecraft_version"
+    mappings "net.fabricmc:yarn:$project.yarn_mappings:v2"
+
+    modImplementation "net.fabricmc:fabric-loader:$project.fabric_loader_version"
+    modImplementation "net.fabricmc.fabric-api:fabric-api:$project.fabric_api_version"
+
+    // ModMenu - required for config screen integration
+    modImplementation "com.terraformersmc:modmenu:${project.modmenu}"
+
+    // YACL - required for configuration GUI
+    modImplementation "dev.isxander:yet-another-config-lib:${project.yacl_fabric}"
+
+    // Include ModMenu and YACL in the mod jar
+    include "com.terraformersmc:modmenu:${project.modmenu}"
+    include "dev.isxander:yet-another-config-lib:${project.yacl_fabric}"
+}
+
+java {
+    withSourcesJar()
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+}
+
+tasks.withType(JavaCompile).configureEach {
+    it.options.release = 21
+}
+
+processResources {
+    inputs.property 'version', project.version
+
+    filesMatching('fabric.mod.json') {
+        expand version: project.version
+    }
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            artifactId = base.archivesName.get()
+            from components.java
+        }
+    }
+
+    repositories {
+        // Add repositories to publish to here.
+    }
+}

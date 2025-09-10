@@ -1,0 +1,2 @@
+This is a placeholder for the mod icon. You'll need to replace this with a proper icon.png file (64x64 pixels recommended)
+

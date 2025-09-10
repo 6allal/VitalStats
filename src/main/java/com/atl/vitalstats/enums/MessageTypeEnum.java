@@ -1,0 +1,20 @@
+package com.atl.vitalstats.enums;
+
+import dev.isxander.yacl3.api.NameableEnum;
+import net.minecraft.text.Text;
+
+public enum MessageTypeEnum implements NameableEnum {
+    ACTIONBAR("Actionbar"),
+    CHAT("Chat"),
+    NONE("None");
+
+    private final String displayName;
+    MessageTypeEnum(String displayName) {
+        this.displayName = displayName;
+    }
+
+    @Override
+    public Text getDisplayName() {
+        return Text.of(displayName);
+    }
+}

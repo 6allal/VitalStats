@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "vitalstats",
+  "version": "${version}",
+
+  "name": "VitalStats",
+  "description": "Simple damage indicator mod that shows a floating health bar (or number) above Players and Mobs. Original work by AdyTech99.",
+  "authors": ["6allal"],
+
+  "contact": {
+    "homepage": "soon",
+    "sources": "soon",
+    "issues": "soon"
+  },
+
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.discord": "soon"
+      },
+      "update_checker": true
+    }
+  },
+
+
+  "license": "LGPL v3",
+
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.atl.vitalstats.fabric.VitalStatsMod"
+    ],
+    "modmenu" : ["com.atl.vitalstats.fabric.config.ModMenuAPIImpl"]
+  },
+  "accessWidener": "vitalstats.accesswidener",
+  "mixins": [
+    "vitalstats.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.15.11",
+    "fabric": "*",
+    "minecraft": ">=1.21",
+    "java": ">=21",
+    "yet_another_config_lib_v3": ">=3.5.0"
+  }
+}
