@@ -32,4 +32,3 @@ This mod is based on and inspired by the original [HealthIndicators mod by AdyTe
 
 **Supported Minecraft Versions:**
 - ✅ Minecraft 1.20.1, 1.20.2, 1.20.4, 1.20.5, 1.20.6
-- ✅ Minecraft 1.21, 1.21.1
